@@ -486,7 +486,7 @@ section:AddButton('Create Config', function()
             SaveManager.AutoloadLabel:SetText('Autoloading Config: ' .. name)
             self.Library:Notify(string.format('set %q to auto load', name))
         end)
-        section:AddButton('Reset autoload', function()
+        section:AddButton('Reset Autoload', function()
             local success, err = self:DeleteAutoLoadConfig()
             if not success then
                 return self.Library:Notify('failed to set autoload config: ' .. err)
